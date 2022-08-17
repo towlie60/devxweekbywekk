@@ -1,0 +1,66 @@
+Variable: A variable represents a value stored in the computer’s memory. It has a name and a
+value. Name is associated with an address. Value is a piece of data.
+Variable Declaration: Specify the data type for a variable.
+Primitive data types (fundamental types):
+Integer: byte, short, int, long;
+Floating numbers: float, double;
+Text: char;
+Logic: Boolean
+Other data types are reference type.
+
+A reference type is a data type that’s based on a class rather than on one of the primitive types
+that are built in to the Java language. The class can be a class that’s provided as part of the Java
+API class library or a class that you write yourself.
+Reference types are any instantiable class as well as arrays
+String, Scanner, Random, Die, int[], String[], etc.
+Reference variables store addresses. (Address Pointer is the value of the reference variable.)
+
+
+Reading Input from the Console
+1. Create a Scanner object
+Scanner input = new Scanner(System.in);
+2. Use the methods next(), nextByte(), nextShort(), nextInt(),
+nextLong(), nextFloat(), nextDouble(), or nextBoolean() to obtain to
+a string, byte, short, int, long, float, double, or boolean value. For
+example,
+System.out.print("Enter a double value: ");
+Scanner input = new Scanner(System.in);
+double d = input.nextDouble();
+
+Import
+The Scanner class is in the java.util package. It is imported on a program for input purpose.
+There are two types of import statements: specific import and wildcard import.
+Specific import specifies a single class in the import statement. For example, the following
+statement imports Scanner from the package java.util.
+import java.util.Scanner;
+The wildcard import imports all the classes in a package by using the asterisk as the wildcard.
+(Take much larger space. Push into the Operand Stack or Constant Pool) For example, the
+following statement imports all the classes from the package java.util.
+import iava.util.*;
+
+System Input and Output
+System is a class in the java.lang package. out is a static member of the System class, and is an
+instance of java.io.PrintStream . println is a method of java.io.PrintStream . This method is
+overloaded to print message to output destination, which is typically a console or file.
+System.in: System Input Device
+System.out: System Output Device
+(character stream type)
+Scanner is a class from scan code to ASCII
+code and then, ASCII String is converted to
+data of certain data type (nextDouble(),
+nextInt()).
+println is a output method
+
+Scanner Class
+S.N. Constructor & Description (Simplified)
+1 Scanner(File source)
+This constructs a new Scanner that produces values
+scanned from the specified file.
+2 Scanner(File source, String charsetName)
+This constructs a new Scanner that produces values
+scanned from the specified file.
+3 Scanner(InputStream source)
+This constructs a new Scanner that produces values
+scanned from the specified input stream
+
+
